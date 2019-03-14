@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Beispielformular</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="templates/default/form.css" />
+    <link rel="stylesheet" href="templates/default/page.css" />
+</head>
+
+<body>
+    <div id="forms-container">
+        <div id="form1-container">
+            <form id="form1">
+                <!-- Info Text -->
+                <p>
+                    Daten, die in diesem Anmeldebogen eingetragen werden, gehen <span class="bold">nicht</span> über
+                    das Internet.
+                    Die Daten werden ausschließlich im Web-Browser verarbeitet und im fertigen Formular maschinenlesbar
+                    dargestellt.
+                    Dies hilft uns Anmeldungen schneller zu berarbeiten.
+                </p>
+
+                <!-- Logo -->
+                <img src="img/sample.png" />
+
+                <!-- Überschrift -->
+                <h1>Beispielformular</h1>
+
+                <!-- Beispiel Name -->
+                <label for="form1-vorname">Vorname:</label>
+                <input type="text" name="form1-vorname" maxlength="40" placeholder="Max" required="required" autofocus="autofocus" />
+                <!-- Erstes Feld bekommt autofocus -->
+                <label for="form1-nachname">Nachname</label>
+                <input type="text" name="form1-nachname" maxlength="40" placeholder="Mustermensch" required="required" />
+
+                <button id="form1-submit" type="submit">Drucken</button>
+            </form>
+        </div>
+    </div>
+    <page size="A4">
+
+    </page>
+</body>
+
+</html>
