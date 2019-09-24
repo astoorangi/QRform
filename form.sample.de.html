@@ -11,33 +11,38 @@
 
 <body>
     <div id="forms-container">
-        <div id="form1-container" class="container">
-            <form id="form1">
-                <!-- Info Text -->
-                <p>
-                    Daten, die in diesem Anmeldebogen eingetragen werden, gehen <span class="bold">nicht</span> über
-                    das Internet.
-                    Die Daten werden ausschließlich im Web-Browser verarbeitet und im fertigen Formular maschinenlesbar
-                    dargestellt.
-                    Dies hilft uns Anmeldungen schneller zu berarbeiten.
-                </p>
+        <!-- Info Text -->
+        <p>
+            <span class="bold">Alle Daten</span>, die Sie auf dieser Seite eintragen, werden <span
+                class="bold">ausschließlich in ihrem Browser</span>
+            verarbeitet und <span class="bold">nicht an den Server gesendet</span>.
+            Nach den Eingabefeldern finden Sie einen Knopf "Drucken", mit welchem Sie das Formular vorausgefüllt
+            herunterladen können. Auf dem ausgedruckten Formular befindet sich dann ein QR-Code, der uns hilft
+            die Anmelung schneller zu verarbeiten.
+        </p>
+        <!-- Logo -->
+        <img src="img/logo.png" />
+        <!-- Überschrift -->
+        <h1>Beispielformular</h1>
+        <form id="form1">
 
-                <!-- Logo -->
-                <img src="img/sample.png" />
+            <!-- Beispiel: Name -->
+            <!-- Erstes Feld bekommt autofocus -->
+            <label for="form1-vorname">Vorname:</label>
+            <input type="text" name="form1-vorname" maxlength="40" placeholder="Max" required="required"
+                autofocus="autofocus" />
 
-                <!-- Überschrift -->
-                <h1>Beispielformular</h1>
+            <label for="form1-nachname">Nachname</label>
+            <input type="text" name="form1-nachname" maxlength="40" placeholder="Mustermensch" required="required" />
 
-                <!-- Beispiel Name -->
-                <label for="form1-vorname">Vorname:</label>
-                <input type="text" name="form1-vorname" maxlength="40" placeholder="Max" required="required" autofocus="autofocus" />
-                <!-- Erstes Feld bekommt autofocus -->
-                <label for="form1-nachname">Nachname</label>
-                <input type="text" name="form1-nachname" maxlength="40" placeholder="Mustermensch" required="required" />
+            <!-- Beispiel: Geburtstag-->
+            <label>Geburtstag:</label>
+            <input type="date" name="form1-geburtstag" required="required" />
 
-                <button id="form1-submit" type="submit">Drucken</button>
-            </form>
-        </div>
+            <!-- Beispiel: -->
+
+            <button id="form1-submit" type="submit">Drucken</button>
+        </form>
     </div>
     <page size="A4">
 
